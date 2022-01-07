@@ -1,5 +1,5 @@
-* Last name: Cojuangco
-* First name: Nicole
+* Last name: cojuangco
+* First name: nicole
 * Github username: MScojuangco
 
 * Instructions:
