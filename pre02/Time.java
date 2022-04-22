@@ -5,23 +5,25 @@ public class Time{
 
 public static void main (String[]args){
 
-//output
-    //A.display seconds since midnight
-    //B.display seconds remaining in the day
-    //C.percentage of day that has passed
-    //D. Change the values of hour, minute, and second to reflect the current time. Then write code to compute the elapsed time since you started working on this exercise.
+/**output
+    *A.display seconds since midnight
+    *B.display seconds remaining in the day
+    *C.percentage of day that has passed
+    *D. Change the values of hour, minute, and second to reflect the current time. Then write code to compute the elapsed time since you started working on this exercise.
+*/
 
-
+    
 //declaring + assigning  variables
 double hour = 2;
 double min = 42;
       
-//test
-    //System.out.println(hour);
-//printing time since midnight
-//System.out.println("Time since midnight:");
-//System.out.println(hour + " hours " + min + " minutes ");
-
+/**test
+    *System.out.println(hour);
+*printing time since midnight
+*System.out.println("Time since midnight:");
+*System.out.println(hour + " hours " + min + " minutes ");
+*/
+    
 //calculating A.time in seconds since midnight
 double SecondsPassed = ( ((hour*60.0)+min) *60.0);
 
