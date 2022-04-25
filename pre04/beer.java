@@ -11,11 +11,11 @@ public class beer{
 public static void main (String[]args){
 
 Scanner in = new Scanner(System.in);
-bottlesNum (99);
+sing (99);
 }
 
 //prints lyrics 
-public static void bottlesNum(int n) {
+public static void sing(int n) {
     int oldNum = n;
     int newNum = n-1;
     
@@ -23,10 +23,10 @@ public static void bottlesNum(int n) {
         System.out.printf( "%d bottles of beer on the wall\n%d bottles of beer, \nya' take one down, ya'pass it around\n%d bottles of beer on the wall", oldNum,oldNum,newNum);
         System.out.println();        
         System.out.println();
-        bottlesNum (n-1);
+        sing (n-1);
 
     } else {
-        System.out.println("1 bottle of beer on the wall, \n1 bottle of beer, \nya'take one down \nya' pass it around, \nthen there's there bottles of beer on the wall!");
+        System.out.println("1 bottle of beer on the wall, \n1 bottle of beer, \nya'take one down \nya' pass it around, \nthen there's 0 bottles of beer on the wall!");
         System.out.println();
 
 System.out.println("No bottles of beer on the wall, \nno bottles of beer, \nya'can't take one down \nya' can't pass it around, \n'cause there bottles of beer on the wall!");;
