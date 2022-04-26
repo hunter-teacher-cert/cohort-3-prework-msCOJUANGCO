@@ -6,9 +6,9 @@ import java.lang.Math;
 /*************************
 A. CH7.9_Eyercise1 (see pdf) 
 
-B. CH7.9_Eyercise2 
-C. CH7.9_Eyercise3
-D. CH7.9_Eyercise4 
+B. CH7.9_Exercise2 
+C. CH7.9_Exercise3
+D. CH7.9_Exercise4 
 ********************************/
 public class loops {
 
@@ -31,7 +31,7 @@ System.out.println(squareROOT(a, y));
 
         double x; 
         int n;
-System.out.println(power(2.0, 0));
+System.out.println(power(2.0, 3));
 
         int z;
 System.out.println(factorial(9));
@@ -76,22 +76,25 @@ public static double power (double x, int n ) {
     return x;
     }
 
-/**D.*************************************    
+//D.*************************************    
 public static int factorial (int z) {
         int prod;
+        int j;
+
     prod =1;
+    j = 1;
     
     if (z == 0) {
         return 1;
     
     } else
 
-        for (z >= 1 ) {
-            prod = (z*(z-1));
-            z = z-1 ;
+        while (j <= z ) {
+            prod = (prod*j);
+            j = j+1 ;
 
             }
     return prod;
     }
-   */ 
+   
 }
