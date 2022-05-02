@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Random;
 import java.io.PrintStream;
+import java.util.Scanner;
+import java.lang.Math;
 
 public class exercises {
 
@@ -10,7 +12,7 @@ public static void main(String[] args) {
     //PRINTS RANDOMIZED NUMBER LIST*****************
         
         int scores = 3; // # of values; can change
-        int[] counts = new int[3];// # of counts; can change
+        int[] counts = new int[100];// # of counts; can change
         int[] array = randomArray(scores); //create
 
 System.out.printf("Our array has  %s values.", scores); 
@@ -19,15 +21,16 @@ printArray(array); //print
 
     for (int score : array) {
         counts[score]++;
-printArray(counts);
-            }
-}
+    printArray(counts);
+     
+        }
+    }  
 //public static int historgram(int[] array){
     
 
 
 
-/*/TRAVERSE + COUNT ARRAY*************************
+/*//TRAVERSE + COUNT ARRAY*************************
 public static int inRange(int[] a, int low, int high) {
     int count = 0;
     for (int i = 0; i < a.length; i++) {
