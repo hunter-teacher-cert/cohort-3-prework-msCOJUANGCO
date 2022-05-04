@@ -21,12 +21,11 @@ Scanner in =new Scanner(System.in);
 System.out.println("Choose a number.");
     n = in.nextInt(); 
 System.out.printf("\nOk! Let's find the prime numbers from 0 to %d.\n", n);
-seive (n);
 
 System.out.println();
-System.out.print("These are the prime numbers:"); 
-//printArray(array); //print
-//System.out.println (seive(primes));
+System.out.print("These are the prime numbers:\n"); 
+
+seive (n);
         }
  
 //followed steps on wikipedia explanation
@@ -34,7 +33,7 @@ public static void seive (int n) {
     int i=0;
     boolean [] primes;
     primes = new boolean [n];
-    for (i=0; i< n; i++) {
+    for (i=0; i<n; i++) {
         primes[i] = true;
         }
     
@@ -42,25 +41,15 @@ public static void seive (int n) {
         
         if (primes[p] == true) {
             
-            for(i = p*p; i <= n; i =i+p) {
+            for(i = p*p; i < n; i =i+p) {
                 primes[i] = false;
                     }
             }
         }
-    for(i = 2; i <= n; i++) {
+    for(i = 2; i < n; i++) {
         if(primes[i] == true){
             System.out.println(i);         
                     }
                 }
-        }
-
-    
-//PRINTS ARRAYS*************************
-public static void printArray(int[] a) {
-    System.out.print("{" + a[0]);
-    for (int i = 1; i < a.length; i++) {
-        System.out.print(", " + a[i]);
-    }
-    System.out.println("}");
         }
 } 
