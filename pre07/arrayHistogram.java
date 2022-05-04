@@ -4,7 +4,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class exercises {
+public class arrayHistogram {
 
     
 public static void main(String[] args) {
@@ -13,6 +13,7 @@ public static void main(String[] args) {
         
         int scores = 3; // # of values; can change
         int[] counts = new int[100];// # of counts; can change
+        int[] count;
         int[] array = randomArray(scores); //create
 
 System.out.printf("Our array has  %s values.", scores); 
@@ -22,25 +23,28 @@ printArray(array); //print
     for (int score : array) {
         counts[score]++;
     printArray(counts);
-     
+
+//inRange(array);
+//System.out.println (count[i]);
+//printArray(count);
+
+
         }
     }  
-//public static int historgram(int[] array){
-    
 
-
-
-/*//TRAVERSE + COUNT ARRAY*************************
-public static int inRange(int[] a, int low, int high) {
+//TRAVERSE + COUNT ARRAY*************************
+public static int inRange(int[] a) {
     int count = 0;
     for (int i = 0; i < a.length; i++) {
-        if (a[i] >= low && a[i] < high) {
+        if (a[i] >= 10 && a[i] < 70) {
             count++;
         }
     }
+    count =count;
     return count;
+
 }
-*/
+
 
 
   //CREATES RANDOM ARRAY*************************
@@ -58,7 +62,7 @@ public static int[] randomArray(int size) {
 public static void printArray(int[] a) {
     System.out.print("{" + a[0]);
     for (int i = 1; i < a.length; i++) {
-        System.out.print(", " + a[i]);
+        System.out.println(", " + a[i]);
     }
     System.out.println("}");
 }

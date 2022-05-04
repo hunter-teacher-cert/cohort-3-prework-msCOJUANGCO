@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-import java.util.Scanner
+import java.util.Scanner;
 import java.lang.Math;
 import java.util.Arrays;
 import java.util.Random;
@@ -14,7 +14,7 @@ B. histogram
 public class array {
 
 public static void main(String[] args) {
-        double [] a = {2,3,4};
+        double [] a = {2,3,4};//enter values here
         double power;
         power = 3.0;
     
