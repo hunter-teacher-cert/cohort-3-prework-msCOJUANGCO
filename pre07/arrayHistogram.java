@@ -23,6 +23,7 @@ printArray(array); //print
     for (int score : array) {
         counts[score]++;
     printArray(counts);
+System.out.println (inRange(count));
 
 //inRange(array);
 //System.out.println (count[i]);
