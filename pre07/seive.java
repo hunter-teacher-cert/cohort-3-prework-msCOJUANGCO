@@ -38,7 +38,7 @@ public static void seive (int n) {
         primes[i] = true;
         }
     
-    for (int p=2; p*p <= n; p++) {
+    for (int p=2; p*p < n; p++) {
         
         if (primes[p] == true) {
             
