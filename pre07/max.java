@@ -7,7 +7,8 @@ import java.util.Random;
 import java.io.PrintStream;
 
 /*************************
-Write a method called indexOfMax that takes an array of integers and returns the index of the largest element. Can you write this method using an enhanced for loop? Why or why not?
+A. ANSWER: method written below
+B. ANSWER TO QUESTION: We can use an enhanced for loop to find the max. Its only limitations are if we want to skip certain values/elements or if we need to refer to an index such as with a search.
 ********************************/
 public class max{
 
@@ -31,7 +32,6 @@ System.out.println("\nThe largest element is:");
     
         }
  
-
 public static int indexOfMax (int[] a, int length) {
     int largest = a[0];
     for (int i=0; i< length; i++) {
